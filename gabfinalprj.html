@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Links Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Import Inter font */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    /* Reset and base styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: image();
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: hsl(308, 36%, 96%);
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    /* Profile section */
+    .profile {
+      text-align: center;
+      background-color: hsl(0, 0%, 8%);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+      margin: 20px auto;
+    }
+
+    /* Profile image */
+    .profile-image img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid hsl(0, 0%, 12%);
+      margin-bottom: 1rem;
+    }
+
+    /* Profile text */
+    .profile-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-description {
+      font-size: 1rem;
+      color: white;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Social links container */
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      max-width: 300px;
+      padding: 10px;
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 10px;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .social-link:hover,
+    .social-link:focus {
+      background-color: hsl(75, 94%, 57%);
+    }
+
+    .social-link img {
+      width: 50px;
+      height: 50px;
+      margin-right: 8px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      .profile {
+        padding: 1.5rem;
+      }
+
+      .profile-name {
+        font-size: 1.3rem;
+      }
+
+      .social-link {
+        max-width: 280px;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (min-width: 600px) and (max-width: 1024px) {
+      .profile {
+        padding: 2rem;
+        max-width: 600px;
+      }
+
+      .profile-name {
+        font-size: 1.5rem;
+      }
+
+      .social-link {
+        max-width: 700px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .profile {
+        padding: 2.5rem;
+        max-width: 800px;
+      }
+
+      .profile-name {
+        font-size: 1.8rem;
+      }
+
+      .profile-description {
+        font-size: 1.1rem;
+      }
+
+      .social-link {
+        width: 600px;
+        padding: 10px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Profile Section -->
+  <section class="profile">
+    <!-- Profile Picture -->
+    <div class="profile-image">
+      <img src="gab-pix.jpg" alt="Profile picture of the user">
+    </div>
+
+    <!-- Profile Details -->
+    <div class="profile-details">
+      <h1 class="profile-name">Gabriel Gbihi</h1>
+      <p style="color: blueviolet; font: bold; font-size: medium;">Lagos, Nigeria</p>
+      <br>
+      <p class="profile-description">Front-end developer and a sales expert</p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://github.com/Gaberiel77" class="social-link" target="_blank" aria-label="GitHub"> GitHub</a>
+      <a href="https://www.frontendmentor.io/profile/Gaberiel77" class="social-link" target="_blank" aria-label="Frontend Mentor">
+        Frontend Mentor
+      </a>
+      <a href="https://www.linkedin.com/in/gabriel-gbihi-023248244/" class="social-link" target="_blank" aria-label="LinkedIn">
+        LinkedIn
+      </a>
+      <a href="https://x.com/Openmarket29422?t=lZjNXVWKZXYOVoLZ_AlNGQ&s=08" class="social-link" target="_blank" aria-label="Twitter">
+        X
+      </a>
+      <a href="https://www.instagram.com/gabrieldryart/" class="social-link" target="_blank" aria-label="Instagram">
+        Instagram
+      </a>
+    </div>
+  </section>
+<footer>
+  <div>
+  </div>
+</footer>
+</body>
+</html>

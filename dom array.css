@@ -1,0 +1,131 @@
+* {
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* * body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    }
+    .add-contact, .contact-list {
+    flex: 1;
+    padding: 2rem;
+    }
+    .add-contact {
+    background-color: #f8f8f8;
+    border-right: 1px solid #e0e0e0;
+    }
+    h1 {
+    margin-bottom: 1rem;
+    color: #333;
+    }
+    input {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    height: 20px;
+    width: calc(100%-1rem);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    button {
+    background-color: #3d3965;
+    width: 100%;
+    height: 40px;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+   cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    }
+    button:hover {
+    background-color: #242143;
+    }
+    ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    li {
+    background-color: #f8f8f8;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    }
+    .contact-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    }
+    .contact-name {
+    font-weight: bold;
+    }
+    .empty-state {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 2rem;
+    height: 13vh;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+   }
+    .warning {
+    color: red;
+    }
+    .toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    border-radius: 4px;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease
+}
+.toast.show {
+opacity: 1;
+pointer-events: auto;
+}
+.edit-btn, .delete-btn {
+margin-left: 10px;
+cursor: pointer;
+}

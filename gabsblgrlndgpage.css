@@ -1,0 +1,219 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    color: #ff7a59;
+  }
+  
+  /* Header and Navbar */
+  header {
+    background-color: #ff7a59;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav-toggle {
+    display: none;
+    background: white;
+    color: #ff7a59;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 5rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta {
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    background-color: white;
+    border: none;
+    color: #ff7a59;
+    cursor: pointer;
+  }
+  
+  .cta-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  /* Main Sections (Product, Company, Connect) */
+  section {
+    padding: 4rem 2rem;
+  }
+  
+  .product-section, .company-section, .connect-section {
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .product-section h2, .company-section h2, .connect-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .product-content, .company-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .product-text, .company-text {
+    flex: 1 1 40%;
+  }
+  
+  .product-image, .company-image {
+    flex: 1 1 40%;
+  }
+  
+  .product-text h3, .company-text h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .product-text p, .company-text p {
+    margin-bottom: 2rem;
+  }
+  
+  .connect-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .connect-content p {
+    margin-bottom: 2rem;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .newsletter-form input {
+    padding: 0.8rem;
+    border: 2px solid #ff7a59;
+    border-radius: 5px;
+    margin-right: 1rem;
+    flex-grow: 1;
+  }
+  
+  .newsletter-form button {
+    padding: 0.8rem 2rem;
+    background-color: #ff7a59;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-links a {
+    margin: 0 0.5rem;
+  }
+  
+  .social-links img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-links.show {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #ff7a59;
+    }
+  
+    .product-content, .company-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

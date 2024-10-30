@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Array</title>
+    <link rel="stylesheet" href="dom array.css">
+    <img src="./img.svg" alt="">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Add contact section -->
+
+        <div class="add-contact">
+            <h1 id="h1">Add Contact</h1>
+            <input type="text" id="name" placeholder="Name">
+            <span id="nameWarning" class="warning"></span>
+            <input type="number" id="phone" placeholder="Phone Number">
+            <span id="phoneWarning" class="warning"></span>
+            <input type="email" id="email" placeholder="Email">
+            <span id="emailWarning" class="warning"></span>
+            <button onclick="addContact()">Add Contact</button>
+
+        </div>
+        
+
+        <!-- Contact List Section -->
+
+        <div class="contact-list">
+            <h1>Contact List</h1>
+            <div id="emptystate" class="empty-state">
+                <p>No contact added yet</p>
+            </div>
+            <ul id="contactList"></ul>
+        </div>
+    </div>
+  <script src="dom array.js"></script>
+</body>
+</html>

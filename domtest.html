@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Table</title>
+  <style>
+    table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 0 auto; /* Center the table */
+}
+
+th{
+    background-color: #635d5d;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #635d5d;
+}
+
+tr:nth-child(odd) {
+  background-color: #fff; /* Set background color for odd rows */
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+caption {
+  font-weight: bold;
+  padding: 8px;
+}
+
+button{
+    margin-left: 238px;
+    border-radius: 15%;
+}
+  </style>
+
+</head>
+<body>
+  <table>
+    <caption>Budget</caption>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Unit Price</th>
+        <th>Total Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bleach</td>
+        <td>2</td>
+        <td>$5.99</td>
+        <td id="bleachTotal"></td>
+      </tr>
+      <tr>
+        <td>Detergent</td>
+        <td>3</td>
+        <td>$8.50</td>
+        <td id="detergentTotal"></td>
+      </tr>
+      <tr>
+        <td>Bath Soap</td>
+        <td>4</td>
+        <td>$3.25</td>
+        <td id="bathSoapTotal"></td>
+      </tr>
+      <tr>
+        <td>Mop Stick</td>
+        <td>1</td>
+        <td>$12.99</td>
+        <td id="mopStickTotal"></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3"><strong>Total:</strong></td>
+        <td id="grandTotal"></td>
+      </tr>
+    </tfoot>
+  </table>
+  <button onclick="calculateTotals()">Calculate Totals</button>
+  
+  <script src="domtest.js"></script>
+</body>
+</html>
