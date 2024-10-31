@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Navigation Section */
+header {
+    background: #F5F7FA;
+    height: 84px;
+    width: 1440;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    justify-content: center;
+    gap: 45px;
+    height: 24px;
+    height: 588px;
+}
+
+#logo {
+    padding-left: 0%;
+    padding-right: 180px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s;
+
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background: #F5F7FA;
+    width: 1440px;
+    height: 599px;
+    padding: 96px 144px;
+    display: flex;
+    flex-direction: column;
+    gap: 104px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.hero h1, .hero h2, .hero p, .hero button {
+    opacity: 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.hero button {
+    background-color: #2bff00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero button:hover {
+    background-color: #0056b3;
+}
+
+/* Audience Section */
+.audience {
+    display: flex;
+    width: 1440px;
+    height: 416px;
+    padding: 50px 144px;
+    gap: 16px;
+    text-align: left;
+}
+
+.audience h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.audience ul {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.audience li {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Overview Section */
+.overview {
+    width: 1440px;
+    height: 400px;
+    padding: 50px 144px;
+    text-align: left;
+}
+
+.overview h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.overview p {
+    font-size: 1rem;
+    color: #555;
+    margin: 20px 0;
+}
+
+.overview button {
+    background-color:#2bff00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Statistics Section */
+.statistics {
+    width: 1440px;
+    padding: 50px 144px;
+    display: flex;
+    justify-content: space-around;
+    gap: 48px;
+}
+
+.stats-item h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.stats-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Insights Section */
+.insights {
+    width: 1440px;
+    padding: 50px 144px;
+    text-align: left;
+}
+
+.insights h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.insights p {
+    font-size: 1rem;
+    color: #555;
+    margin: 20px 0;
+}
+
+.insights button {
+    background-color: #2bff00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    width: 1440px;
+    padding: 50px 144px;
+    background-color: #e9ecef;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonials footer {
+    color: #333;
+    font-weight: bold;
+}
+
+.testimonials button {
+    background-color:#2bff00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Blog Section */
+.blog {
+    width: 1440px;
+    padding: 50px 144px;
+}
+
+.blog h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.blog article {
+    margin: 20px 0;
+}
+
+.blog article h3 {
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+.blog a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.blog a:hover {
+    text-decoration: underline;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    width: 1440px;
+    padding: 50px 144px;
+    text-align: center;
+    background-color: #F5F7FA;
+}
+
+.call-to-action button {
+    background-color: #2bff00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Footer Section */
+footer {
+    width: 1440px;
+    padding: 50px 144px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-links h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+.newsletter form {
+    display: flex;
+    gap: 5px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    background-color: #2bff00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <header>
+        <div>
+           
+            <nav>
+                <ul>
+                    <div id="logo">
+                    <li> <img src="Logo.png" alt="Nexcent-logo"></li>
+                    </div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Lessons and insights from 8 years</h1>
+        <h2>Where to grow your business as a photographer: site or social media?</h2>
+        <button>Register</button>
+        <h2>Manage your entire community in a single system</h2>
+        <p>Who is Nextcent suitable for?</p>
+
+    </section>
+
+    <!-- Audience Section -->
+    <section class="audience">
+        <ul>
+            <div>
+            <li>Membership Organisations</li>
+            <p>Our membership management software provides full automation 
+                of membership renewals and payments</p>
+            </div>
+            <div>
+            <li>National Associations</li>
+            <p>Our membership management software provides full automation 
+            of membership renewals and payments</p>
+            </div>
+            <div>
+            <li>Clubs And Groups</li>
+            <p>Our membership management software provides full automation 
+                of membership renewals and payments</p>
+
+            </div>
+        </ul>
+        <p>Our membership management software provides full automation of membership renewals and payments</p>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="overview">
+        <h2>The unseen of spending three years at Pixelgrade</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+        <button>Learn More</button>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="stats-item">
+            <h3>2,245,341</h3>
+            <p>Members</p>
+        </div>
+        <div class="stats-item">
+            <h3>46,328</h3>
+            <p>Clubs</p>
+        </div>
+        <p>We reached here with our hard work and dedication</p>
+        <div class="stats-item">
+            <h3>828,867</h3>
+            <p>Event Bookings</p>
+        </div>
+        <div class="stats-item">
+            <h3>1,926,436</h3>
+            <p>Payments</p>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section class="insights">
+        <h2>How to design your site footer like we did</h2>
+        <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+        <button>Sign Up</button>
+        <button>Learn More</button>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <blockquote>
+            <p>"Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim."</p>
+            <footer>— Tim Smith, British Dragon Boat Racing Association</footer>
+        </blockquote>
+        <button>Meet all customers</button>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <h2>Caring is the new marketing</h2>
+        <p>The Nexcent blog is the best place to read about the latest membership insights, trends, and more. See who's joining the community, read about how our community are increasing their membership income, and lots more.​</p>
+        <article>
+            <h3>Creating Streamlined Safeguarding Processes with OneRen</h3>
+            <p>What are your safeguarding responsibilities and how can you manage them?</p>
+            <a href="#">Read more</a>
+        </article>
+        <article>
+            <h3>Revamping the Membership Model with Triathlon Australia</h3>
+            <a href="#">Read more</a>
+        </article>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="call-to-action">
+        <p>Pellentesque suscipit fringilla libero eu.</p>
+        <button>Get a Demo</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <div>
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h3>Stay up to date</h3>
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <p>&copy; 2020 Nexcent Ltd. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
